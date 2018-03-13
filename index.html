@@ -2,14 +2,38 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="css/include.css" rel="stylesheet">
         <title>Note list</title>
     </head>
 
     <body>
+        <div class="flex column full-height">
+            <header>
+                <h1>Noties</h1>
+            </header>
 
+            <ul></ul>
 
-        <script>
+            <button id="showModal">+</button>
+        </div>
 
-        </script>
+        <div class="modal-bg">
+            <div class="modal">
+                <input type="text" id="noteText">
+                <input type="datetime-local" id="noteTime">
+                <input type="checkbox" id="noteImportant"> Important
+                <button id="addNote">Add</button>
+            </div>
+        </div>
+
+        <div class="modal-bg">
+            <div class="modal">
+                <input type="text" id="noteText">
+                <button id="edtNote">Edit</button>
+            </div>
+        </div>
+
+        <script src="javascript/script.js"></script>
     </body>
 </html>
