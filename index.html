@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="css/reset.css" rel="stylesheet">
         <link href="css/include.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Merienda" rel="stylesheet">
         <title>Note list</title>
     </head>
 
@@ -20,17 +22,15 @@
 
         <div class="modal-bg">
             <div class="modal">
-                <input type="text" id="noteText">
-                <input type="datetime-local" id="noteTime">
-                <input type="checkbox" id="noteImportant"> Important
-                <button id="addNote">Add</button>
-            </div>
-        </div>
-
-        <div class="modal-bg">
-            <div class="modal">
-                <input type="text" id="noteText">
-                <button id="edtNote">Edit</button>
+                <div class="flex-column">
+                    <h3>Add new note</h3>
+                    <input type="text" id="noteText">
+                    <input type="datetime-local" id="noteTime">
+                    <div class="flex checkbox">
+                        <input type="checkbox" id="noteImportant"> <h5>Important</h5>
+                    </div>
+                    <button id="addNote">Add</button>
+                </div>
             </div>
         </div>
 

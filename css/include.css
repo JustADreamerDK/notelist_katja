@@ -1,7 +1,8 @@
 body{
-    margin: 0px;
+    font-family: lato;
+    color: #00061a;
+    background-color: #e6ecff;
 }
-
 .flex{
     display: flex;
 }
@@ -19,18 +20,31 @@ body{
 }
 
 ul{
-    flex: 1;
-    background-color: red;
+    background-color: #99b3ff;
+    position: relative;
+    margin-top: 100px;
 }
 header{
-    background-color: blue;
+    background-color: #001a66;
+    width: 100vw;
+    height: 98px;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #00061a;
 }
 
 #showModal{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: #0099CC;
+    background: #001a66;
+    color: #e6ecff;
+    border: 1px solid #00061a;
+    padding: 5px 15px;
+    font-size: 35px;
 }
 
 .modal-bg{
@@ -44,10 +58,84 @@ header{
     display: none;
 }
 .modal{
-    background-color: #fff;
+    background-color: #e6ecff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    height: 30%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #00061a;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#addNote{
+    align-self: flex-end;
+    background: #001a66;
+    color: #e6ecff;
+    border: 1px solid #00061a;
+    padding: 5px 10px;
+}
+h1{
+    font-size: 50px;
     padding: 10px;
+    font-family: Merienda;
+    color: #e6ecff;
+}
+h3{
+    font-size: 20px;
+}
+h5{
+    font-size: 15px;
+}
+.important{
+    background-color: #ff9999;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #00061a;
+    padding: 15px;
+}
+.buttons{
+    margin-top: 10px;
+}
+.delete, .edit, .edit-time{
+    padding: 5px;
+    border: 1px solid #00061a;
+    background-color: #e6ecff;
+    color: #00061a;
+}
+.edit-time{
+    margin: 0px 10px;
+}
+p{
+    font-size: 15px;
+}
+[type=text], [type=datetime-local]{
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+    color: #00061a;
+    border: 1px solid #00061a;
+}
+.checkbox{
+    margin-top: 5px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    margin-top: 7px;
 }
